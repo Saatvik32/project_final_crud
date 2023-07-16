@@ -1,0 +1,14 @@
+<%- include("partials/header"); %>
+
+<h1>Edit</h1>
+<form class="" action="/savechanges" method="post">
+    <div class="form-group">
+        <h3><label><%= tite %></label></h3>
+        <!-- <input type="text" name="updatedTitle" class="form-control" value="<%= tite %>"> -->
+        <label>Post</label>
+        <textarea class="form-control" name="updatedContent" rows="7" cols="40"><%= textContent %></textarea> 
+    </div>
+    <button class="btn btn-primary" type="submit" name="savebutton" value="<%= id %>">Save Changes</button>
+</form>
+
+<%- include("partials/footer"); %>

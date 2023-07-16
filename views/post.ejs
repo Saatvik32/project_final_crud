@@ -1,0 +1,19 @@
+<%- include("partials/header"); %>
+
+<h1><%=tite %></h1>
+<p><%=content %></p>
+
+<div class="flex">
+    <div style="padding-right: 10px">
+<form class="" action="/delete" method="post">
+    <button class="btn btn-danger" type="submit" name="delbutton" value="<%= id %>">Delete</button>
+</form>
+</div>
+<div>
+<form class="" action="/edit" method="post">
+    <button class="btn btn-warning" type="submit" name="editbutton" value="<%= id %>">Edit</button>
+</form>
+</div>
+</div>
+
+<%- include("partials/footer"); %>
